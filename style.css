@@ -1,0 +1,174 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styles */
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f7f7f7;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  /* Header Styles */
+  .header {
+    background-color: rgba(255, 99, 99, 0.8); /* Semi-transparent header */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .logo span {
+    color: #ffe0e0;
+  }
+  
+  .navbar a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+  }
+  
+  .navbar a:hover {
+    color: #ffe0e0;
+  }
+  
+  /* Home Section */
+  .home {
+    text-align: center;
+    padding: 50px 20px;
+    background-image: url('home-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    opacity: 0.9;
+  }
+  
+  .home h1 {
+    font-size: 3rem;
+  }
+  
+  .home p {
+    font-size: 1.5rem;
+  }
+  
+  button {
+    background-color: #ff6363;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #e05353;
+  }
+  
+  /* About Section */
+  .about {
+    background-color: #f7f7f7;
+    padding: 30px 20px;
+    text-align: center;
+  }
+  
+  .about-img {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    border-radius: 10px;
+  }
+  
+  /* Services Section */
+  .services {
+    background-color: #ffe5e5;
+    padding: 30px 20px;
+    text-align: center;
+  }
+  
+  .services ul {
+    list-style: none;
+  }
+  
+  .services li {
+    margin: 15px 0;
+    font-size: 1.2rem;
+  }
+  
+  /* Shop Section */
+  .shop {
+    background-color: #fff;
+    padding: 30px 20px;
+  }
+  
+  .shop table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+  }
+  
+  .shop th,
+  .shop td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .shop th {
+    background-color: #ff6363;
+    color: white;
+  }
+  
+  .shop td {
+    font-size: 1rem;
+  }
+  
+  /* Footer Styles */
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .navbar {
+      flex-direction: column;
+      margin-top: 10px;
+    }
+  
+    .navbar a {
+      margin: 5px 0;
+    }
+  
+    .shop table {
+      width: 100%;
+    }
+  
+    .home {
+      background-image: url('home-background-mobile.jpg');
+    }
+  }
+  
